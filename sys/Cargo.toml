@@ -31,6 +31,7 @@ name = "geos_sys"
 default = []
 dox = []
 static = ["geos-src", "link-cplusplus"]
+thread-unsafe = ["static", "geos-src/thread-unsafe"]
 v3_7_0 = []
 v3_8_0 = []
 v3_9_0 = []

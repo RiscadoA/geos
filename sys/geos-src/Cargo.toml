@@ -12,3 +12,6 @@ exclude = ["source/tests"]
 
 [build-dependencies]
 cmake = "0.1.45"
+
+[features]
+thread-unsafe = []

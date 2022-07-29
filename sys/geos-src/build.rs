@@ -9,6 +9,10 @@ fn main() {
         .define("GEOS_ENABLE_TESTS", "OFF") // GEOS <= 3.7
         .define("BUILD_DOCUMENTATION", "OFF")
         .define("CMAKE_INSTALL_LIBDIR", "lib")
+        .define(
+            "BUILD_THREAD_SAFE",
+            if cfg!(thread_unsafe) { "OFF" } else { "ON" },
+        )
         .define("BUILD_SHARED_LIBS", "OFF") // GEOS >= 3.8
         .define("GEOS_BUILD_STATIC", "ON") // GEOS <= 3.7
         .define("GEOS_BUILD_SHARED", "OFF") // GEOS <= 3.7

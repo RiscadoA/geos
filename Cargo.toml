@@ -21,6 +21,7 @@ dox = ["geo-types", "wkt", "json", "geos-sys/dox"]
 geo = ["geo-types", "wkt"]
 json = ["geojson"]
 static = ["geos-sys/static"]
+thread-unsafe = ["geos-sys/thread-unsafe"]
 
 v3_6_0 = []
 v3_7_0 = ["geos-sys/v3_7_0", "v3_6_0"]
